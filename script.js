@@ -24,10 +24,12 @@ function showData(singleRowData) {
 
     const h2 = clone.querySelector("h2");
     h2.textContent = singleRowData.title.rendered;
-    const bed = clone.querySelector(".bedrooms");
+    const bed = clone.querySelector(".bedrooms span");
     bed.textContent = singleRowData.bedrooms;
-    const bath = clone.querySelector(".bathrooms");
+    const bath = clone.querySelector(".bathrooms span");
     bath.textContent = singleRowData.bathrooms;
+    const sq_feet = clone.querySelector(".sq_feet span");
+    sq_feet.textContent = singleRowData.sq_f;
 
     const img_url = singleRowData._embedded["wp:featuredmedia"][0].media_details.sizes.medium.source_url;
     clone.querySelector("img").src = img_url;
