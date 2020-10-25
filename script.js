@@ -38,15 +38,12 @@ function showData(singleRowData) {
     if (singleRowData.categories[0] === 3) {
         console.log("this is popular");
         clone.querySelector(".popular").classList.remove("hidden");
-
     }
 
     // new ii
-
     if (singleRowData.categories[0] === 2) {
         console.log("this is new");
         clone.querySelector(".newest").classList.remove("hidden");
-
     }
 
     const h2 = clone.querySelector("h2");
@@ -75,7 +72,10 @@ function showNewest() {
     article.forEach(elem => {
         console.log("hey there");
         elem.classList.toggle("hidden");
+        document.querySelector("#newest").classList.toggle("active");
     })
+
+
 
 }
 
@@ -90,6 +90,7 @@ function showPopular() {
     article.forEach(elem => {
         console.log("popz in the house");
         elem.classList.toggle("hidden");
+        document.querySelector("#popular").classList.toggle("active");
     })
 
 }
