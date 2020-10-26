@@ -1,4 +1,4 @@
-link = "http://mariajalmeida.com/2.semester/halcyon_properties/wp-json/wp/v2/property?_embed";
+link = "https://mariajalmeida.com/2.semester/halcyon_properties/wp-json/wp/v2/property?_embed";
 
 window.addEventListener("DOMContentLoaded", getData);
 
