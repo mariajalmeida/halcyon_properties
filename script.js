@@ -1,4 +1,6 @@
-link = "https://mariajalmeida.com/2.semester/halcyon_properties/wp-json/wp/v2/property?_embed";
+const link = "https://mariajalmeida.com/2.semester/halcyon_properties/wp-json/wp/v2/property?_embed";
+
+console.log("working now");
 
 window.addEventListener("DOMContentLoaded", getData);
 
